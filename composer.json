@@ -1,6 +1,6 @@
 {
     "name": "enkidu/laravel-prefix",
-    "description": "N/A",
+    "description": "Laravel Prefix",
     "type": "library",
     "keywords": [
         "laravel"
