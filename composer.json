@@ -1,23 +1,25 @@
 {
     "name": "enkidu/laravel-prefix",
-    "description": "N/A",
+    "description": "Laravel Prefix",
     "type": "library",
-    "license": "N/A",
     "keywords": [
-        "Laravel"
+        "laravel"
     ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Alaa Al-Maliki",
             "email": "alaa.almaliki@gmail.com"
         }
     ],
-    "require": {
-        "php": "^7.2"
+    "require-dev": {
+        "orchestra/testbench": "^5.1",
+        "nunomaduro/phpinsights": "^1.14",
+        "friendsofphp/php-cs-fixer": "^2.16"
     },
     "autoload": {
         "psr-4": {
-            "Enkidu\\Prefix\\": "src/"
+            "Enkidu\\Prefix\\": "src"
         },
         "files": [
             "src/Helper/helpers.php"
@@ -25,7 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Enkidu\\Prefix\\Test": "tests/"
+            "Enkidu\\Prefix\\Test\\": "tests"
         }
     },
     "extra": {
@@ -34,6 +36,5 @@
                 "Enkidu\\Prefix\\PrefixServiceProvider"
             ]
         }
-    },
-    "version": "1.0.0"
+    }
 }
