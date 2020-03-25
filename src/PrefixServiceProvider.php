@@ -14,11 +14,9 @@ use Illuminate\Support\ServiceProvider;
 class PrefixServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
-     *
-     * @return void
+     * Boot Module
      */
-    public function boot()
+    public function boot(): void
     {
         $this->publishes([
             __DIR__.'/../config/prefix.php' => config_path('prefix.php'),
